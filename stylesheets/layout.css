@@ -1,0 +1,59 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+body {
+  font-family: "TT Autonomous", sans-serif;
+  width: 1280px;
+  margin: 0 auto;
+  background-color: rgb(33, 33, 33);
+}
+
+section {
+  display: block;
+  border: dashed;
+  border-color: rgb(0, 255, 30);
+  width: 1200px;
+  height: 1080px;
+  position: relative;
+  left: 40px;
+}
+
+.section-1 div:nth-of-type(1) {
+  display: flex;
+  color: rgb(235, 235, 235);
+  font-weight: 300;
+  font-size: 20px;
+  justify-content: space-between;
+  line-height: 28px;
+
+  position: relative;
+  top: 229px;
+}
+
+.section-1 h1 {
+  color: rgb(235, 235, 235);
+  font-weight: 700;
+  font-size: 96px;
+  font-style: normal;
+
+  position: absolute;
+  top: 328px;
+}
+
+.section-1 img {
+  width: 1200px;
+  position: absolute;
+  top: 435px;
+}
+
+.section-1 div:nth-of-type(2) {
+  color: rgba(245, 201, 16, 1);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+
+  position: absolute;
+  top: 473px;
+  left: 941px;
+}

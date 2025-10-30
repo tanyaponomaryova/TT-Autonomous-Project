@@ -1,59 +1,507 @@
-/* * {
+/* colors
+черный: rgb(33, 33, 33);
+желтый: rgb(255, 187, 14);
+белый: rgb(235, 235, 235);
+тёмно-серый: #4B4B4B;
+светло-серый: #D9D9D9;
+*/
+
+/* padding and border are included in the calculation of the width and height */
+* {
   box-sizing: border-box;
-} */
+}
 
 body {
-  font-family: "TT Autonomous", sans-serif;
   width: 1280px;
   margin: 0 auto;
   background-color: rgb(33, 33, 33);
+  font-family: "TT Autonomous", sans-serif;
+  position: relative;
 }
 
-section {
-  display: block;
-  border: dashed;
-  border-color: rgb(0, 255, 30);
-  width: 1200px;
-  height: 1080px;
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 14645px;
+  background-image: url("../images/maket1.png");
+  opacity: 0.1;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ПЕРВАЯ СЕКЦИЯ */
+
+.section1 {
+  height: 1220px;
+  background-color: rgb(255, 187, 14);
+}
+
+/* первый див */
+.section1 div:nth-of-type(1) {
   position: relative;
+  display: flex;
+  gap: 130px;
+  font-family: "TT Autonomous Mono";
+  font-size: 28px;
+  line-height: 120%;
+  text-align: right;
+  color: rgb(33, 33, 33);
+}
+.section1 div:nth-of-type(1) img {
+  margin-top: 98px;
+  margin-left: 75px;
+}
+.section1 div:nth-of-type(1) p {
+  margin-top: 144px;
+}
+
+/* второй див -- вкладка */
+
+.section1 h6 {
+  font-family: "TT Autonomous Mono";
+  font-size: 34px;
+  color: rgb(235, 235, 235);
+  position: absolute;
+  top: 16px;
+  left: 740px;
+}
+
+.section1 div:nth-of-type(2) {
+  margin-left: 40px;
+  height: 67px;
+  position: absolute;
+  top: 284px;
+}
+
+.section1 h1 {
+  text-transform: uppercase;
+  font-size: 97px;
+  color: rgb(33, 33, 33);
+  font-weight: 800;
+  margin-top: 42px;
+  margin-left: 40px;
+}
+
+/* третий див */
+.section1 div:nth-of-type(3) {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 17px;
+  display: flex;
+  gap: 65px;
+  z-index: 1;
+}
+
+.section1 div:nth-of-type(3) p {
+  padding-top: 50px;
+  font-family: "TT Autonomous Mono";
+  font-size: 28px;
+  line-height: 120%;
+  color: rgb(33, 33, 33);
+}
+
+/* чертвёртый див */
+.section1 div:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 114px;
+  position: absolute;
+  top: 791px;
+}
+
+/* ВТОРАЯ СЕКЦИЯ */
+.section2 {
+  height: 1723px;
+  position: absolute;
+  top: 1220px;
+}
+
+.enter {
+  display: flex;
+  gap: 0px;
+  flex-direction: column;
+  align-items: start;
+  color: rgb(255, 187, 14);
+  margin-left: 120px;
+  position: absolute;
+  top: 305px;
+}
+
+/* 01 */
+.section2 h1 {
+  font-size: 255px;
+  font-family: "TT Autonomous Outline";
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+.section2 h2 {
+  font-size: 46px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* только для сотрудников */
+.staff-only-plate {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin-top: -5px;
+  margin-left: 5px;
+}
+.staff-only-plate h3 {
+  font-family: "TT Autonomous Mono";
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(33, 33, 33);
+
+  position: absolute;
+  top: 20px;
+  left: 24px;
+}
+
+/* стрелка */
+.white-arrow {
+  position: absolute;
+  top: 317px;
+  left: 574px;
+}
+
+/* плашка за надписями */
+.background-frame {
+  position: relative;
+  top: 261px;
   left: 40px;
 }
 
-.section-1 div:nth-of-type(1) {
+/* Жёлтая табличка */
+.section2 div:nth-of-type(2) {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 553px;
+  gap: 70px;
+  position: absolute;
+  left: 151px;
+  top: 812px;
+}
+
+.section2 div:nth-of-type(2) p {
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 700;
+  color: rgb(33, 33, 33);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.yellow-plate {
+  position: absolute;
+  top: 760px;
+  left: 40px;
+  z-index: -1;
+}
+
+.white-plate {
+  position: absolute;
+  top: 760px;
+  left: 673px;
+  z-index: -1;
+}
+
+.section2 div:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 65px;
+  position: absolute;
+  top: 788px;
+  left: 699px;
+}
+
+/* чёрная плашка */
+.section2 div:nth-of-type(3) img:nth-of-type(3) {
+  margin-top: -80px;
+}
+
+/* ! + активн произ */
+.section2 div:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 105px;
+
+  position: absolute;
+  top: 965px;
+  left: 708px;
+}
+
+/* ! */
+.section2 div:nth-of-type(4) h5 {
+  font-size: 173px;
+  font-weight: 700;
+  color: rgb(33, 33, 33);
+  text-align: center;
+}
+
+/* активн произ */
+.section2 div:nth-of-type(4) h6 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  text-transform: uppercase;
   color: rgb(235, 235, 235);
-  font-weight: 300;
-  font-size: 20px;
-  justify-content: space-between;
-  line-height: 28px;
+  text-align: center;
+}
+
+/* ТРЕТЬЯ СЕКЦИЯ */
+.section3 {
+  height: 833px;
+  position: absolute;
+  top: 2943px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+
+  position: absolute;
+  top: 82px;
+  left: 40px;
+}
+
+.tabs h6 {
+  font-family: "TT Autonomous Mono";
+  font-size: 34px;
+  font-weight: 500;
+  color: rgb(33, 33, 33);
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-left: 27px;
+  padding-top: 15px;
+}
+
+.tabs img {
+  z-index: -1;
+}
+
+.tabs h5 {
+  font-family: "TT Autonomous";
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(235, 235, 235);
+}
+
+.tabs div {
+  position: relative;
+}
+
+.license {
+  width: 744px;
+  height: 352px;
+
+  margin-top: 82px;
+  margin-left: 496px;
 
   position: relative;
-  top: 229px;
 }
 
-.section-1 h1 {
-  color: rgb(235, 235, 235);
+.license h1 {
+  font-size: 202px;
+  font-weight: 800;
+  color: rgb(33, 33, 33);
+
+  position: absolute;
+  top: 115px;
+  right: 65px;
+}
+.license h2 {
+  font-size: 35px;
   font-weight: 700;
-  font-size: 96px;
-  font-style: normal;
+  text-transform: uppercase;
+  color: rgb(255, 187, 14);
 
   position: absolute;
-  top: 328px;
+  top: 53px;
+  left: 225px;
+}
+.license h3 {
+  font-family: "TT Autonomous Mono";
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(33, 33, 33);
+
+  width: 360px;
+
+  position: absolute;
+  top: 149px;
+  left: 75px;
 }
 
-.section-1 img {
-  width: 1200px;
-  position: absolute;
-  top: 435px;
+.formats {
+  position: relative;
+  margin-top: 67px;
+  margin-left: 40px;
 }
 
-.section-1 div:nth-of-type(2) {
-  color: rgba(245, 201, 16, 1);
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 28px;
+.formats div {
+  font-family: "TT Autonomous Mono";
+  font-size: 28px;
+  font-weight: 500;
+  color: rgb(33, 33, 33);
 
   position: absolute;
-  top: 473px;
-  left: 941px;
+  top: 13px;
+  left: 60px;
+
+  display: flex;
+  gap: 125px;
+}
+.formats img {
+  position: absolute;
+  z-index: -1;
+}
+
+/* ЧЕТВЁРТАЯ СЕКЦИЯ */
+.section4 {
+  position: absolute;
+  top: 3744px;
+  width: 1280px;
+  height: 1159px;
+  border-color: blue;
+  background-color: rgb(255, 121, 255, 0.5);
+  z-index: 5;
+}
+
+/* ПЯТАЯ СЕКЦИЯ */
+.section5 {
+  position: absolute;
+  top: 4903px;
+  width: 1280px;
+  height: 1871px;
+  background-color: rgb(235, 235, 235);
+}
+
+/* фон */
+.section5 > img:nth-of-type(1) {
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  margin-top: 276px;
+  z-index: 0;
+  pointer-events: none;
+}
+/* жёлтый детали */
+.section5 > img:nth-of-type(2) {
+  position: absolute;
+  top: 0px;
+  left: 140px;
+  margin-top: 823px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.section5 p {
+  font-family: "TT Autonomous Mono";
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 120%;
+  color: rgb(33, 33, 33);
+}
+
+#detail1 {
+  position: absolute;
+  top: 919px;
+  left: 139px;
+}
+
+#detail2 {
+  position: absolute;
+  top: 755px;
+  left: 519px;
+}
+
+#detail3 {
+  position: absolute;
+  top: 1103px;
+  left: 715px;
+}
+
+#detail4 {
+  position: absolute;
+  top: 1381px;
+  left: 500px;
+  text-align: end;
+}
+
+#detail5 {
+  position: absolute;
+  top: 1300px;
+  left: 1027px;
+  text-align: end;
+}
+
+.section5 h1 {
+  font-size: 344px;
+  font-weight: 600;
+  color: rgb(33, 33, 33);
+  z-index: 1;
+}
+
+#A {
+  position: absolute;
+  top: 913.3px;
+  left: 201.8px;
+}
+
+#B {
+  position: absolute;
+  top: 725px;
+  left: 677px;
+}
+
+#T {
+  position: absolute;
+  top: 1420.3px;
+  left: 353.13px;
+}
+
+#O {
+  position: absolute;
+  top: 1420px;
+  left: 785px;
+}
+
+.section5 div {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  margin-left: 373px;
+}
+
+.section5 div h2 {
+  font-size: 51px;
+  font-weight: 800;
+  color: rgb(33, 33, 33);
+  position: absolute;
+  top: 47px;
+  left: 115px;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.section5 div img {
+  position: absolute;
+  z-index: 0;
 }

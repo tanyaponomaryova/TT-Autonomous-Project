@@ -1,0 +1,25 @@
+<svg width="865" height="55" viewBox="0 0 865 55" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="54.0881" height="864.78" transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 0)" fill="#4B4B4B"/>
+<rect width="54.0881" height="601.258" transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 0)" fill="url(#pattern0_100_32)"/>
+<defs>
+<pattern id="pattern0_100_32" patternUnits="userSpaceOnUse" patternTransform="matrix(189.849 0 0 379.698 -16.6384 -16.6368)" preserveAspectRatio="none" viewBox="-10.2539 -10.2529 117 234" width="1" height="1">
+<use xlink:href="#pattern0_100_32_inner" transform="translate(-351 -234)"/>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(-234 -234)"/>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(-117 -234)"/>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(0 -234)"/>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(-292.5 -117)"/>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(-175.5 -117)"/>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(-58.5 -117)"/>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(58.5 -117)"/>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(-351 0)"/>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(-234 0)"/>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(-117 0)"/>
+<g id="pattern0_100_32_inner">
+<path d="M0 234L234 0" stroke="#EBEBEB" stroke-width="29"/>
+</g>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(-292.5 117)"/>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(-175.5 117)"/>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(-58.5 117)"/>
+<use xlink:href="#pattern0_100_32_inner" transform="translate(58.5 117)"/>
+</pattern></defs>
+</svg>
